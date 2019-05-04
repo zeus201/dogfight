@@ -8,23 +8,14 @@ public interface IMobile {
 	public void setDirection (Direction direction);
 	public Point getPostion ();
 	public Dimension getDimension ();
-	public int getWidth() {
-		return width;
-	}
-	public int getHeight() {
-		return height;
-	}
-	public int getSpeed() {
-		return Speed;
-	
-	}
-    public Image getImage ( ) {
-    	return Image;
-    }
+	public int getWidth();
+	public int getHeight();
+	public int getSpeed();
+    public Image getImage ( );
     public void move ();
-    public void placeInArea(Aera area) {}
-    public boolean isPlayer(int player) {}
-    public setDogfightModel(DogfightModel dogfightModel) {}
+    public void placeInArea(IArea area);
+    public boolean isPlayer(int player);
+    public void setDogfightModel(DogfightModel dogfightModel);
     public default boolean hit() {
 		return false;}
     public default boolean isWeapon() {

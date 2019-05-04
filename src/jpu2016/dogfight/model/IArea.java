@@ -4,5 +4,5 @@ import java.awt.Image;
 
 public interface IArea {
 	Dimension getDimension();
-	Image getImage ()
+	Image getImage ();
 }
