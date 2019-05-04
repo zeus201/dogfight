@@ -6,6 +6,3 @@ public interface IUserOrder {
 		int getPlayer();
 	}
 
-
-	
-
